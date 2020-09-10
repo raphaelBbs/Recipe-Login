@@ -6,6 +6,7 @@ import Recipe from 'src/containers/Recipe';
 import Home from 'src/containers/Home';
 import Navigation from 'src/containers/Navigation';
 import Error from 'src/containers/Error';
+import Login from '../LoginForm';
 
 import './styles.css';
 
@@ -19,6 +20,7 @@ const App = ({ fetchRecipes }) => {
     <div className="app">
       <Navigation toto="tata" />
       <main className="main">
+        <Login />
         <header className="header">oRecipe</header>
         <Error />
         <Route exact path="/">
